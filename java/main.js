@@ -57,3 +57,27 @@ window.onload = () => {
     document.querySelector(".header .header-2").classList.remove("active");
   }
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".swiper", {
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 5500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+});
+
+// swipper
